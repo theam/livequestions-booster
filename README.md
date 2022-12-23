@@ -21,7 +21,10 @@ Booster offers scalability and reliability for high volume request and event han
 
 ## Booster Architecture
 
-<img width="800" alt="Screenshot 2022-12-22 at 11 43 12" src="https://user-images.githubusercontent.com/738853/209127301-41972816-d5dd-4038-b116-772aecd1ef26.png">
+![Booster Architecture](https://user-images.githubusercontent.com/738853/209127301-41972816-d5dd-4038-b116-772aecd1ef26.png)
+
+![Live Questions Booster Architecture](https://user-images.githubusercontent.com/1671524/209247376-7ddae28b-cb64-4ebf-857e-89535ba9cea8.jpg)
+
 
 ## iOS App Repository
 This is the GitHub repository for the iOS app Live Questions. [Live Questions iOS App](https://github.com/theam/livequestions-iOS)
