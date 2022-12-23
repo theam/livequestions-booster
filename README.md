@@ -27,7 +27,7 @@ Booster offers scalability and reliability for high volume request and event han
 
 
 ## iOS App Repository
-This is the GitHub repository for the iOS app Live Questions. [Live Questions iOS App](https://github.com/theam/livequestions-iOS)
+[Live Questions iOS App](https://github.com/theam/livequestions-iOS)
 
 ## Articles
 [Scalable Low-Code backends with Booster](https://medium.com/@juanSagasti/scalable-low-code-backends-with-booster-a32b9386dd27)
