@@ -18,7 +18,6 @@ Booster generates a fully-working GraphQL API for your backend clients to use, w
 Booster offers scalability and reliability for high volume request and event handling, ensuring data consistency and availability through the use of cloud resources such as Lambdas, API Gateway, and DynamoDB.
 
 
-
 ## Booster Architecture
 
 ![Booster Architecture](https://user-images.githubusercontent.com/738853/209127301-41972816-d5dd-4038-b116-772aecd1ef26.png)
@@ -26,8 +25,24 @@ Booster offers scalability and reliability for high volume request and event han
 ![Live Questions Booster Architecture](https://user-images.githubusercontent.com/1671524/209247376-7ddae28b-cb64-4ebf-857e-89535ba9cea8.jpg)
 
 
+## Quick Start
+
+Here are some steps you can follow to download and run the application locally.
+
+```
+$ git clone https://github.com/theam/livequestions-booster.git
+$ cd livequestions-booster
+$ npm install
+$ boost start -e local 
+```
+
+For testing in local or development environments, we suggest using the Altair GraphQL client. Simply enter the endpoint URL for your application, which is located at http://localhost:3000/graphql. It will also load the documentation for your API schema!
+
+Note: Keep in mind that subscriptions are currently not supported in a local environment. For that, you need to deploy the application to your cloud provider of choice.
+
 ## iOS App Repository
 [Live Questions iOS App](https://github.com/theam/livequestions-iOS)
+
 
 ## Articles
 [Scalable Low-Code backends with Booster](https://medium.com/@juanSagasti/scalable-low-code-backends-with-booster-a32b9386dd27)
