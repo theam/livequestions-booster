@@ -38,7 +38,18 @@ $ boost start -e local
 
 For testing in local or development environments, we suggest using the Altair GraphQL client. Simply enter the endpoint URL for your application, which is located at http://localhost:3000/graphql. It will also load the documentation for your API schema!
 
-Note: Keep in mind that subscriptions are currently not supported in a local environment. For that, you need to deploy the application to your cloud provider of choice.
+Note that if you are testing some Commands locally and don’t want to deal with the authentication part (we explain authentication later in the article), you can just keep the Command public and authorize it for ‘all’:
+
+```
+@Command({
+authorize: 'all'
+})
+export class CreateTopic {…}
+```
+
+Keep in mind that subscriptions are currently not supported in a local environment. For that, you need to deploy the application to AWS, as explained in the Booster documentation.
+
+
 
 ## iOS App Repository
 [Live Questions iOS App](https://github.com/theam/livequestions-iOS)
