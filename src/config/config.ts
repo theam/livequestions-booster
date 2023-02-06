@@ -1,7 +1,9 @@
 import { Booster, JwksUriTokenVerifier } from '@boostercloud/framework-core'
 import { BoosterConfig, Level } from '@boostercloud/framework-types'
+import { BoosterRocketFiles } from '@boostercloud/rocket-file-uploads-core'
 import { Environment, packageOfProvider, EnvironmentProvider, productionEnvironment, developmentEnvironment, localEnvironment } from './environment'
 import * as dotenv from 'dotenv'
+import { ConfigConstants } from '../common/config-constants'
 
 function buildEnvironment(environment: Environment): void {
 
@@ -23,6 +25,12 @@ function buildEnvironment(environment: Environment): void {
             environment.jwksURL,
             "custom:roles"
           )
+        ]
+        config.rockets = [
+          new BoosterRocketFiles(
+            config, 
+            [ConfigConstants.rocketFilesConfigurationDefault]
+          ).rocketForAWS()
         ]
 
         break

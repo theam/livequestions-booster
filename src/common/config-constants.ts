@@ -1,3 +1,5 @@
+import { RocketFilesUserConfiguration } from "@boostercloud/rocket-file-uploads-types"
+
 export namespace ConfigConstants {
     
     // Validation
@@ -15,4 +17,10 @@ export namespace ConfigConstants {
 
     export const minQuestionLength = 5
     export const maxQuestionLength = 150
+
+    export const rocketFilesConfigurationDefault: RocketFilesUserConfiguration = {
+        storageName: 'questionablystorage',
+        containerName: '', // Not needed in AWS.
+        directories: ['files']
+      }
 }
