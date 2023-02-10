@@ -1,26 +1,10 @@
 import { Booster, Command } from '@boostercloud/framework-core'
 import { Register } from '@boostercloud/framework-types'
 import { FileHandler } from '@boostercloud/rocket-file-uploads-core'
+import { ListItem, ListItemProperties } from '@boostercloud/rocket-file-uploads-types'
 import { CommonValidations } from '../common/common-validations'
 import { ConfigConstants } from '../common/config-constants'
 import { UserRole } from '../config/roles'
-
-export class ListItem {
-  public constructor(
-    readonly name: string,
-    readonly properties: ListItemProperties,
-    readonly metadata?: { [propertyName: string]: string }
-  ){}
-}
-
-export class ListItemProperties {
-  public constructor(
-    readonly lastModified: Date,
-    readonly createdOn?: Date,
-    readonly contentLength?: number, // Size in bytes
-    readonly contentType?: string
-  ) {}
-}
 
 @Command({
   authorize: [UserRole],
