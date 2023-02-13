@@ -60,6 +60,8 @@ Keep in mind that subscriptions are currently not supported in a local environme
 
 [From iOS Dev to full-stack in no time with Booster 🚀](https://medium.com/@juanSagasti/f2eda6463c40)
 
+[Cloud File Management with Booster](https://medium.com/the-theam-journey/cloud-file-management-with-booster-cf54c6b83ee2)
+
 
 ## License
 
